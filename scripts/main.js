@@ -9,7 +9,7 @@ formEl.addEventListener('submit', (event) => {
     const ageEl = document.createElement('p');
     const salaryEl = document.createElement('p');
     const imgEl = document.createElement('img');
-    const emailEl = document.createElement('p');
+    const emailEl = document.createElement('a');
     const progressEl = document.createElement('div');
     const progressBar = document.createElement('div');
     const progressText = document.createElement('p');
@@ -22,7 +22,8 @@ formEl.addEventListener('submit', (event) => {
     salaryEl.innerText = `Salary: ${rate.value * days.value}`;
     photo.value = 'https://www.whatsappimages.in/wp-content/uploads/2021/06/HD-New-Beautiful-Unique-Profile-Images-Pictures.gif';
     imgEl.src = photo.value;
-    emailEl.innerText = `Email: ${email.value}`;
+    progress.value = 0;
+    emailEl.innerHTML = `<p>email: </p><a href = 'mailto:${email.value}'>${email.value}</a>`;
     progressText.innerText = progress.value + '%';
 
     card.classList.add('card');
