@@ -23,7 +23,6 @@ form.addEventListener('submit', (event) => {
   const progressValue = document.createElement('p');
   
 
-
   const{ name, last_name, age, rate, days, photo, email, progress } = event.target;//this
 
   nameElem.innerText = `Name: ${name.value}`;
@@ -38,10 +37,6 @@ form.addEventListener('submit', (event) => {
   photoElem.setAttribute('alt', 'photo');
   emailElem.setAttribute('href', email.value);
 
-  
-
-
- 
 
   card.classList.add('card');
 
@@ -60,7 +55,6 @@ form.addEventListener('submit', (event) => {
   progressLine.style.backgroundColor = progress.value >= 50 ? 'powderblue' : 'azure';
 
 
-
   progressContainer.append(progressLine);
 
   progressLine.append(progressValue);
@@ -77,8 +71,5 @@ form.addEventListener('submit', (event) => {
   photo.value = '';
   email.value = '';
   progress.value = '';
-
-
-
 
 })
