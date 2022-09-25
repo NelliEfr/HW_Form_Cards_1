@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.workers {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+}
+
+.workers input,
+.workers button {
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.cardElem {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #767676;
+    width: 400px;
+    font-size: 20px;
+}
+
+.cardItem {
+    display: flex;
+}
+
+.cardItem .left,
+.cardElem .right {
+    margin: 10px;
+}
+
+.cardElem .left {
+    width: 30%;
+}
+
+.cardElem .right {
+    width: 70%;
+    font-weight: 600;
+}
+
+.photo {
+    width: 360px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.progressElem {
+    /* height: 100%; */
+    margin: 10px;
+    border: 1px solid #767676;
+}
+
+.progressColorElem {
+    /* height: 100%; */
+    text-align: center;
+}
+
+/* .progressValueElem {
+    position: absolute;
+    text-align: center;
+    opacity: 1;
+} */
+
