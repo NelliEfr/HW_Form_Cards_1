@@ -1,0 +1,37 @@
+/* #root {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+} */
+.form {
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+	flex-direction: column;
+	width: 200px;
+}
+.form input,
+.form button {
+	margin: 10px;
+	padding: 10px;
+}
+.form button {
+	background-color: orange;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size: 20px;
+}
+.card {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	width: 300px;
+	height: 500px;
+	background-color: lightblue;
+}
+.img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
