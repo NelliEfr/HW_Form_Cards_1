@@ -52,19 +52,11 @@
 }
 
 .progressElem {
-    /* height: 100%; */
     margin: 10px;
     border: 1px solid #767676;
 }
 
-.progressColorElem {
-    /* height: 100%; */
+.progressValueElem {
     text-align: center;
 }
-
-/* .progressValueElem {
-    position: absolute;
-    text-align: center;
-    opacity: 1;
-} */
 
