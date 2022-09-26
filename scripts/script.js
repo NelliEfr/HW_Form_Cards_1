@@ -1,26 +1,36 @@
 const rootElem = document.querySelector('#root');
-const formElem = document.querySelector('.form');
+const form = document.querySelector('.form');
 
-formElem.addEventListener('submit', (event) => {
+form.addEventListener('submit', (event) => {
 	event.preventDefault();
-	const card = document.createElement('div');
+	const cardElem = document.createElement('div');
 	const nameElem = document.createElement('p');
 	const emailElem = document.createElement('a');
 	const photoElem = document.createElement('img');
+	const progressContainer = document.createElement('div');
+	const progressLine = document.createElement('div');
+	const progressValue = document.createElement('p');
 
-	const { name, lastname, email, photo } = event.target;
+	const { name, lastname, email, photo, progress } = event.target;
 
 	nameElem.innerText = `Name: ${name.value} ${lastname.value}`;
-	emailElem.innerText = email;
-	photoElem.setAttribute('src', photo.value);
-	photoElem.setAttribute('alt', 'photo');
-	emailElem.setAttribute('href', `mailto: ${email}`);
+	emailElem.innerText = email.value;
+	emailElem.href = `mailto:${email}`;
+	photoElem.src = photo.value;
+	photoElem.alt = 'photo';
 
 	photoElem.classList.add('img');
-	card.classList.add('card');
+	cardElem.classList.add('card');
 
-	card.append(nameElem, emailElem, photoElem);
-	rootElem.append(card);
+	cardElem.append(
+		nameElem,
+		emailElem,
+		photoElem,
+		progressContainer,
+		progressLine,
+		progressValue
+	);
+	rootElem.append(cardElem);
 
 	name.value = '';
 	lastname.value = '';
