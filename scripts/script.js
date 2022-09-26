@@ -21,6 +21,8 @@ form.addEventListener('submit', (event) => {
   const progressContainer = document.createElement('div');
   const progressLine = document.createElement('div');
   const progressValue = document.createElement('p');
+  const emailContainer = document.createElement('div');
+
   
 
   const{ name, last_name, age, rate, days, photo, email, progress } = event.target;//this
@@ -35,7 +37,7 @@ form.addEventListener('submit', (event) => {
 
   photoElem.setAttribute('src', photo.value);
   photoElem.setAttribute('alt', 'photo');
-  emailElem.setAttribute('href', email.value);
+  emailElem.setAttribute('href', `mailto:&{email.value}`);
 
 
   card.classList.add('card');
@@ -43,6 +45,7 @@ form.addEventListener('submit', (event) => {
   photoElem.classList.add('img'); 
 
   emailElem.classList.add('email');
+  
 
   progressContainer.classList.add('progress-container');
   
@@ -59,8 +62,10 @@ form.addEventListener('submit', (event) => {
 
   progressLine.append(progressValue);
 
+  emailContainer.append(emailTextElem, emailElem);
 
-  card.append(nameElem, lastNameElem, ageElem, salaryElem, photoElem, emailTextElem, emailElem, progressContainer);
+
+  card.append(nameElem, lastNameElem, ageElem, salaryElem, photoElem, emailContainer, progressContainer);
   container.append(card);
 
   name.value = '';
@@ -71,5 +76,6 @@ form.addEventListener('submit', (event) => {
   photo.value = '';
   email.value = '';
   progress.value = '';
+
 
 })

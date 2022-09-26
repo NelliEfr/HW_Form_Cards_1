@@ -29,7 +29,7 @@
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
-    width: 250px;
+    width: 350px;
     background-color: lavender;
 
 }
@@ -38,6 +38,7 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
+  
 }
 
 .email{
@@ -64,6 +65,8 @@
     text-align: center;
 
 }
+
+
 
 
 
