@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form input,
+.form button{
+    padding: 10px;
+    margin: 10px;
+}
+
+.form button{
+    background-color: pink;
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.card{
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    background-color: lavender;
+
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  
+}
+
+.email{
+    text-decoration: none;
+    color:black;
+}
+
+.progress-container{
+    border: 1px solid black;
+    height: 20px;
+    position: relative;
+}
+
+.progress-value{
+    position: absolute;
+    width: 100%;
+
+}
+
+.progress-line{
+    height: 100%;
+    position: absolute;
+    /* background-color: powderblue; */
+    text-align: center;
+
+}
+
+
+
+
+
